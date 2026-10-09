@@ -278,10 +278,11 @@ body.panel #legend{opacity:0;pointer-events:none}
 /* Tema Claro (Dia ☀️) */
 body.light-theme{
   --ink:#0A120E;
-  --surface:#F2F6FA;
-  --sand:#112018;
+  --surface:#FFFFFF;
+  --sand:#FFFFFF;
+  --sand-card:#F8FAF8;
   --line:rgba(0,0,0,0.08);
-  --line-light:#D4E0EB;
+  --line-light:#DCE3DD;
   --muted:#53645C;
 }
 body.light-theme #stage{
@@ -324,6 +325,100 @@ body.light-theme #legend h4{color:#1F6E25}
 body.light-theme .lg .bar{background:rgba(0,0,0,0.08)}
 body.light-theme #hint{
   background:rgba(255,255,255,0.88);color:#0A120E;border-color:rgba(0,0,0,0.1);box-shadow:0 4px 16px rgba(30,80,130,0.1);
+}
+
+/* Painel Lateral / Drawer no Tema Claro (100% Contraste & Legibilidade) */
+body.light-theme #panel{
+  background:#FFFFFF!important;
+  color:#0A120E!important;
+  box-shadow:-8px 0 40px rgba(10,25,40,0.15)!important;
+  border-left:1px solid rgba(0,0,0,0.06);
+}
+body.light-theme #panel .scroll{background:#FFFFFF!important;color:#0A120E!important}
+body.light-theme #panel #pc{color:#0A120E!important}
+body.light-theme #panel #pc h2{color:#0A120E!important}
+body.light-theme #panel .k{color:#1F6E25!important}
+body.light-theme #panel p,
+body.light-theme #panel .fact,
+body.light-theme #panel .how{color:#243028!important}
+body.light-theme #panel #x{
+  background:#0A120E!important;color:#FFFFFF!important;border:1px solid rgba(0,0,0,0.1)!important;
+  box-shadow:0 2px 10px rgba(0,0,0,0.15)!important;
+}
+body.light-theme #panel #x:hover{
+  background:var(--lime)!important;color:#0A120E!important;border-color:var(--lime)!important;
+}
+body.light-theme #panel #tabs{background:transparent}
+body.light-theme #panel #tabs button{
+  background:#FFFFFF!important;color:#0A120E!important;border:1px solid #D4E0EB!important;
+  box-shadow:0 1px 4px rgba(0,0,0,0.04)!important;
+}
+body.light-theme #panel #tabs button:hover{border-color:#1F6E25!important;color:#1F6E25!important}
+body.light-theme #panel #tabs button.on{
+  background:#0A120E!important;color:var(--lime)!important;border-color:#0A120E!important;
+  box-shadow:0 2px 10px rgba(0,0,0,0.15)!important;
+}
+body.light-theme #panel .step{
+  background:#F8FAF8!important;border:1px solid #DCE3DD!important;box-shadow:0 2px 8px rgba(0,0,0,0.03)!important;
+}
+body.light-theme #panel .step i{background:#0A120E!important;color:var(--lime)!important}
+body.light-theme #panel .step strong{color:#0A120E!important}
+body.light-theme #panel .step small{color:#3E4742!important}
+body.light-theme #panel .step a{color:#1F6E25!important}
+body.light-theme #panel .kp div{
+  background:#F8FAF8!important;border:1px solid #DCE3DD!important;box-shadow:0 2px 8px rgba(0,0,0,0.03)!important;
+}
+body.light-theme #panel .kp b{color:#0A120E!important}
+body.light-theme #panel .kp small{color:#3E4742!important}
+body.light-theme #panel .roi{
+  background:#F8FAF8!important;border:1px solid #DCE3DD!important;
+}
+body.light-theme #panel .roi td{border-bottom:1px solid #DCE3DD!important;color:#0A120E!important}
+body.light-theme #panel .roi td small{color:#53645C!important}
+body.light-theme #panel .lic{
+  background:#F8FAF8!important;border:1px solid #DCE3DD!important;color:#0A120E!important;
+}
+body.light-theme #panel .lic small{color:#53645C!important}
+body.light-theme #panel .sc{
+  background:#F8FAF8!important;border:1px solid #DCE3DD!important;
+}
+body.light-theme #panel .sc th{color:#53645C!important}
+body.light-theme #panel .sc td{border-top:1px solid #DCE3DD!important;color:#0A120E!important}
+body.light-theme #panel #nav{border-top:1px solid #DCE3DD!important}
+body.light-theme #panel #nav button{border:1px solid #0A120E!important;color:#0A120E!important}
+body.light-theme #panel #nav button:hover{background:rgba(10,18,14,0.06)!important}
+body.light-theme #panel #nav button:last-child{
+  background:#0A120E!important;color:var(--lime)!important;border-color:#0A120E!important;
+}
+body.light-theme #panel-resizer::after{
+  background:rgba(10,18,14,0.2)!important;border:1px solid rgba(0,0,0,0.12)!important;
+}
+
+/* Arquitetura no Modo Claro */
+body.light-theme .arch-layer{
+  background:rgba(255,255,255,0.92)!important;border-color:rgba(0,0,0,0.1)!important;
+  box-shadow:0 6px 24px rgba(30,80,130,0.12)!important;
+}
+body.light-theme .arch-layer-head b{color:#1F6E25!important}
+body.light-theme .arch-layer-head small{color:#53645C!important}
+body.light-theme .arch-dismiss-btn{
+  background:rgba(0,0,0,0.06)!important;border-color:rgba(0,0,0,0.12)!important;color:#0A120E!important;
+}
+body.light-theme .arch-box{
+  background:#FFFFFF!important;border-color:rgba(0,0,0,0.1)!important;color:#0A120E!important;
+}
+body.light-theme .arch-box:hover{
+  border-color:#1F6E25!important;background:#F4F7F4!important;
+}
+body.light-theme .arch-box.active{
+  border-color:#1F6E25!important;background:rgba(209,244,112,0.22)!important;
+}
+body.light-theme .arch-box-name{color:#0A120E!important}
+body.light-theme .arch-box-spec{color:#4A5850!important}
+body.light-theme .arch-box-tag{background:rgba(0,0,0,0.06)!important;color:#1F6E25!important}
+body.light-theme #arch-deck-toggle{
+  background:rgba(255,255,255,0.94)!important;border-color:#1F6E25!important;color:#1F6E25!important;
+  box-shadow:0 4px 18px rgba(30,80,130,0.15)!important;
 }
 
 @media(max-width:899px){
@@ -2960,7 +3055,7 @@ function openArchBox(box, layer) {
     </div>
     
     <div class="k">Visão Funcional na Operação</div>
-    <p style="font-size:14px;line-height:1.45;color:var(--sand)">${E(box.desc || '')}</p>
+    <p style="font-size:14px;line-height:1.5">${E(box.desc || '')}</p>
     
     ${specRows ? `<div class="k">Especificação & Integração Técnica</div><table class="roi">${specRows}</table>` : ''}
     
